@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { movePiece, tempMove } from '../store/gameSlice';
+import bg from '../assets/bg.jpg';
 import './board.css';
 import { board_size } from '../config';
 import { STATUS } from '../status';
@@ -36,7 +37,7 @@ const Board = () => {
   };
 
   return (
-    <div className="board">
+    <div className="board" style={{ backgroundImage: `url(${bg})` }}>
       {board.map((row, i) => (
         <div key={i} className="board-row">
           {row.map((cell, j) => {

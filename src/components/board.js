@@ -36,7 +36,7 @@ const Board = () => {
   };
 
   return (
-    <div className="board" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="board">
       {board.map((row, i) => (
         <div key={i} className="board-row">
           {row.map((cell, j) => {

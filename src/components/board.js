@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { movePiece, tempMove } from '../store/gameSlice';
 import './board.css';
-import bg from '../assets/bg.jpg';
 import { board_size } from '../config';
 import { STATUS } from '../status';
 

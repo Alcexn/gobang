@@ -36,7 +36,7 @@ function Control() {
       </div>
       <div className="setting">
         <div className="setting-item">
-          电脑先手: <Switch defaultChecked={aiFirst} onChange={onFirstChange} disabled={loading} />
+          AI先手: <Switch defaultChecked={aiFirst} onChange={onFirstChange} disabled={loading} />
         </div>
         <div className="setting-item">
           难度:
@@ -47,9 +47,9 @@ function Control() {
             disabled={loading}
             options={[
               { value: '2', label: '弱智' },
-              { value: '4', label: '简单' },
-              { value: '6', label: '普通' },
-              { value: '8', label: '困难' },
+              { value: '4', label: '菜鸟' },
+              { value: '6', label: '一般' },
+              { value: '8', label: '变态' },
             ]}
           />
         </div>
